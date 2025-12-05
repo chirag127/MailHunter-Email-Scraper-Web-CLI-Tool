@@ -1,4 +1,40 @@
-Emails.db
-.google-cookie
-/venv
-*env
+# Python Environment and Bytecode
+*.py[cod]
+__pycache__/
+.venv/
+venv/
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+
+# IDE and Editor Files (VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependency Management (uv/pip)
+# If using uv, the virtual environment might be stored in a global cache, 
+# but we ignore local venvs just in case.
+
+# Logs and Data
+*.log
+/data/extracted_emails.csv
+/temp_storage/
+
+# Compiled Artifacts (if any custom compilation occurs)
+*.so
+*.dll
+
+# Jupyter/Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Secrets and Credentials
+.env
+secrets.json
+
+# CI/CD Artifacts
+.github/workflows/*.log
