@@ -1,40 +1,43 @@
-# Python Environment and Bytecode
-*.py[cod]
+# Python cache and environment files
 __pycache__/
-.venv/
-venv/
-
-# Distribution / Packaging
-dist/
+*.pyc
+*.pyo
+*.pyd
+.Python
 build/
+dist/
 *.egg-info/
-.pytest_cache/
+*.egg
+virtualenv/
+venv/
+env/
+conda-env/
+.env
+.venv/
 
-# IDE and Editor Files (VSCode, PyCharm, etc.)
+# IDE and editor specific files
 .vscode/
 .idea/
 *.swp
-*.swo
+*~
+.DS_Store
 
-# Dependency Management (uv/pip)
-# If using uv, the virtual environment might be stored in a global cache, 
-# but we ignore local venvs just in case.
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
 
-# Logs and Data
-*.log
-/data/extracted_emails.csv
-/temp_storage/
+# Database files (if applicable, e.g., SQLite)
+*.sqlite3
+*.db
 
-# Compiled Artifacts (if any custom compilation occurs)
-*.so
-*.dll
+# OS specific
+Thumbs.db
+Desktop.ini
 
-# Jupyter/Notebook Checkpoints
-.ipynb_checkpoints/
+# Docker (if used)
+.dockerignore
+docker-compose.override.yml
 
-# Secrets and Credentials
-.env
-secrets.json
-
-# CI/CD Artifacts
-.github/workflows/*.log
+# Ruff specific
+.ruff_cache/
